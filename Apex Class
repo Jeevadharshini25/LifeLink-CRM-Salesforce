@@ -1,0 +1,72 @@
+#HOSPITAL CONTROLLER
+
+public without sharing class HospitalController {
+
+    @AuraEnabled(cacheable=true)
+    public static List<Hospital__c> getHospitals(){
+
+        return [
+
+            SELECT
+                Id,
+                Hospital_Name__c,
+                Location__c,
+                Contact_Number__c,
+                Email__c
+
+            FROM Hospital__c
+        ];
+    }
+}
+
+
+#DONOR CONTROLLER
+
+public without sharing class HospitalController {
+
+    @AuraEnabled(cacheable=true)
+    public static List<Hospital__c> getHospitals(){
+
+        return [
+
+            SELECT
+                Id,
+                Hospital_Name__c,
+                Location__c,
+                Contact_Number__c,
+                Email__c
+
+            FROM Hospital__c
+        ];
+    }
+}
+
+
+
+
+#BLOOD REQUEST CONTROLLER
+
+public without sharing class BloodRequestController {
+
+    @AuraEnabled
+    public static void createBloodRequest(
+        String patientName,
+        String bloodGroup,
+        Integer unitsRequired,
+        String requiredDate,
+        String emergencyLevel,
+        String hospital
+    ) {
+
+        Blood_Request__c req = new Blood_Request__c();
+
+        req.Patient_Name__c = patientName;
+        req.Blood_Group_Needed__c = bloodGroup;
+        req.Units_Required__c = unitsRequired;
+        req.Required_Date__c = Date.valueOf(requiredDate);
+        req.Emergency_Level__c = emergencyLevel;
+        req.Hospital__c = hospital;
+
+        insert req;
+    }
+}
