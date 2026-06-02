@@ -1,0 +1,35 @@
+.main-container{
+    background:#f4f6f9;
+    padding:40px;
+    display:flex;
+    justify-content:center;
+}
+
+.form-box{
+    background:white;
+    width:600px;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+h1{
+    color:#d90429;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+lightning-input,
+lightning-combobox,
+lightning-textarea{
+    margin-bottom:20px;
+}
+
+.success-box{
+    background:#d4edda;
+    color:#155724;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+    font-weight:bold;
+}

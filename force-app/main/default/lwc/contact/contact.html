@@ -1,0 +1,637 @@
+
+<template>
+
+<div style="background:#f4f6fb;font-family:Segoe UI,sans-serif;color:#111;overflow:hidden;">
+
+<!-- HEADER -->
+
+<div style="
+background:white;
+padding:18px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 4px 20px rgba(0,0,0,0.05);
+">
+
+<div>
+
+<h1 style="
+margin:0;
+font-size:42px;
+color:#d90429;
+font-weight:800;
+">
+❤️ LifeLink CRM
+</h1>
+
+<p style="
+margin-top:5px;
+color:#666;
+font-size:15px;
+letter-spacing:2px;
+">
+TOGETHER WE SAVE LIVES
+</p>
+
+</div>
+
+<div style="
+display:flex;
+gap:38px;
+font-size:18px;
+font-weight:600;
+align-items:center;
+">
+
+<a href="/lifelink/" style="text-decoration:none;color:#111;">Home</a>
+
+<a href="/lifelink/about" style="text-decoration:none;color:#111;">About Us</a>
+
+<a href="/lifelink/donor" style="text-decoration:none;color:#111;">Donors</a>
+
+<a href="/lifelink/hospital" style="text-decoration:none;color:#111;">Hospitals</a>
+
+<a href="/lifelink/bloodrequest" style="text-decoration:none;color:#111;">Blood Requests</a>
+
+<a href="/lifelink/contact" style="text-decoration:none;color:#d90429;">Contact</a>
+
+</div>
+
+<button
+onclick={handleCall}
+style="
+background:linear-gradient(135deg,#ff1744,#b30021);
+color:white;
+border:none;
+padding:16px 34px;
+border-radius:16px;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 8px 20px rgba(217,4,41,0.25);
+">
+
+📞 Emergency Call
+
+</button>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- HERO SECTION -->
+
+<section style="
+width:92%;
+margin:40px auto;
+border-radius:45px;
+overflow:hidden;
+position:relative;
+min-height:460px;
+background:
+linear-gradient(rgba(60,0,12,0.74),rgba(120,0,25,0.48)),
+url('/sfsites/c/resource/contactstart?v=3');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:flex-end;
+padding:70px;
+box-shadow:0 20px 50px rgba(0,0,0,0.08);
+">
+
+<div style="
+max-width:760px;
+color:white;
+z-index:2;
+">
+
+<div style="
+display:inline-block;
+padding:12px 24px;
+background:rgba(255,255,255,0.14);
+border-radius:40px;
+backdrop-filter:blur(10px);
+font-size:14px;
+font-weight:700;
+letter-spacing:3px;
+margin-bottom:25px;
+">
+
+📞 CONTACT LIFELINK CRM
+
+</div>
+
+<h1 style="
+font-size:86px;
+line-height:0.95;
+margin:0;
+font-weight:900;
+letter-spacing:-3px;
+">
+
+Let’s Connect <br>
+Together
+
+</h1>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- CONTACT CARDS -->
+
+<div style="
+width:92%;
+margin:-70px auto 70px;
+position:relative;
+z-index:5;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:28px;
+">
+
+<div style="
+background:white;
+padding:38px;
+border-radius:34px;
+box-shadow:0 15px 40px rgba(0,0,0,0.07);
+text-align:center;
+">
+
+<div style="
+width:90px;
+height:90px;
+background:#ffe5ea;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:40px;
+margin:0 auto 24px;
+">
+📞
+</div>
+
+<h2 style="
+font-size:32px;
+margin-bottom:16px;
+font-weight:900;
+">
+Call Us
+</h2>
+
+<button
+onclick={handleCall}
+style="
+background:none;
+border:none;
+font-size:18px;
+line-height:1.8;
+color:#666;
+cursor:pointer;
+font-weight:600;
+">
+
++91 7845734418
+
+</button>
+
+</div>
+
+
+
+
+
+
+<div style="
+background:#d90429;
+padding:38px;
+border-radius:34px;
+box-shadow:0 18px 40px rgba(217,4,41,0.24);
+text-align:center;
+color:white;
+transform:translateY(-25px);
+">
+
+<div style="
+width:90px;
+height:90px;
+background:rgba(255,255,255,0.14);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:40px;
+margin:0 auto 24px;
+backdrop-filter:blur(10px);
+">
+✉️
+</div>
+
+<h2 style="
+font-size:32px;
+margin-bottom:16px;
+font-weight:900;
+">
+Email Support
+</h2>
+
+<button
+onclick={handleMessage}
+style="
+background:none;
+border:none;
+font-size:18px;
+line-height:1.8;
+color:rgba(255,255,255,0.92);
+cursor:pointer;
+font-weight:600;
+">
+
+lifelinkcrm@gmail.com
+
+</button>
+
+</div>
+
+
+
+
+
+
+<div style="
+background:white;
+padding:38px;
+border-radius:34px;
+box-shadow:0 15px 40px rgba(0,0,0,0.07);
+text-align:center;
+">
+
+<div style="
+width:90px;
+height:90px;
+background:#ffe5ea;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:40px;
+margin:0 auto 24px;
+">
+🩸
+</div>
+
+<h2 style="
+font-size:32px;
+margin-bottom:16px;
+font-weight:900;
+">
+24×7 Support
+</h2>
+
+<p style="
+font-size:18px;
+line-height:1.8;
+color:#666;
+">
+Emergency blood coordination available anytime.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- CONTACT FORM SECTION -->
+
+<div style="
+width:92%;
+margin:20px auto 80px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+">
+
+<!-- LEFT IMAGE -->
+
+<div style="
+position:relative;
+height:720px;
+border-radius:42px;
+overflow:hidden;
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+">
+
+<img
+src="/sfsites/c/resource/contact?v=1"
+style="
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+"
+>
+
+<div style="
+position:absolute;
+bottom:30px;
+left:30px;
+background:rgba(255,255,255,0.14);
+backdrop-filter:blur(12px);
+padding:28px;
+border-radius:28px;
+color:white;
+max-width:320px;
+">
+
+<h2 style="
+margin:0;
+font-size:42px;
+font-weight:900;
+">
+LifeLink CRM
+</h2>
+
+<p style="
+margin-top:14px;
+font-size:18px;
+line-height:1.8;
+color:rgba(255,255,255,0.92);
+">
+
+Helping hospitals and donors connect faster during emergencies.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- RIGHT FORM -->
+
+<div style="
+background:white;
+padding:55px;
+border-radius:42px;
+box-shadow:0 20px 50px rgba(0,0,0,0.08);
+position:relative;
+overflow:hidden;
+">
+
+<div style="
+position:absolute;
+right:-100px;
+top:-100px;
+width:260px;
+height:260px;
+background:#ffe5ea;
+border-radius:50%;
+opacity:0.5;
+"></div>
+
+<div style="position:relative;z-index:2;">
+
+<div style="
+display:inline-block;
+padding:10px 20px;
+background:#ffe5ea;
+border-radius:40px;
+font-size:13px;
+font-weight:700;
+letter-spacing:2px;
+color:#d90429;
+margin-bottom:24px;
+">
+
+SEND MESSAGE
+
+</div>
+
+<h2 style="
+font-size:62px;
+line-height:1;
+margin:0 0 22px;
+font-weight:900;
+letter-spacing:-2px;
+color:#111;
+">
+
+Reach Out <br>
+To Us
+
+</h2>
+
+<p style="
+font-size:20px;
+line-height:1.9;
+color:#666;
+margin-bottom:42px;
+max-width:650px;
+">
+
+Have questions regarding donors, hospitals or emergency blood requests? Send us a message anytime.
+
+</p>
+
+<div style="
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:22px;
+">
+
+<input type="text" placeholder="Full Name"
+style="
+padding:20px;
+border-radius:18px;
+border:1px solid #eee;
+font-size:17px;
+background:#fafafa;
+outline:none;
+">
+
+<input type="email" placeholder="Email Address"
+style="
+padding:20px;
+border-radius:18px;
+border:1px solid #eee;
+font-size:17px;
+background:#fafafa;
+outline:none;
+">
+
+<input type="text" placeholder="Phone Number"
+style="
+padding:20px;
+border-radius:18px;
+border:1px solid #eee;
+font-size:17px;
+background:#fafafa;
+outline:none;
+grid-column:span 2;
+">
+
+<textarea placeholder="Your Message"
+style="
+padding:20px;
+border-radius:18px;
+border:1px solid #eee;
+font-size:17px;
+background:#fafafa;
+outline:none;
+height:170px;
+resize:none;
+grid-column:span 2;
+"></textarea>
+
+<button
+onclick={handleMessage}
+style="
+background:#d90429;
+color:white;
+border:none;
+padding:22px;
+border-radius:18px;
+font-size:18px;
+font-weight:800;
+cursor:pointer;
+grid-column:span 2;
+box-shadow:0 12px 30px rgba(217,4,41,0.25);
+">
+
+📩 Send Message
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div style="
+background:#d90429;
+margin-top:80px;
+padding:65px 70px 25px;
+color:white;
+border-top-left-radius:38px;
+border-top-right-radius:38px;
+">
+
+<div style="
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:50px;
+">
+
+<div>
+
+<h2 style="
+font-size:48px;
+margin-bottom:15px;
+">
+❤️ LifeLink CRM
+</h2>
+
+<p style="
+font-size:20px;
+line-height:1.8;
+max-width:350px;
+">
+Smart healthcare donor management platform built using Salesforce CRM.
+</p>
+
+</div>
+
+<div>
+
+<h3 style="
+font-size:28px;
+margin-bottom:20px;
+">
+Quick Links
+</h3>
+
+<p><a href="/lifelink/" style="color:white;text-decoration:none;">Home</a></p>
+
+<p><a href="/lifelink/about" style="color:white;text-decoration:none;">About Us</a></p>
+
+<p><a href="/lifelink/donor" style="color:white;text-decoration:none;">Donors</a></p>
+
+<p><a href="/lifelink/hospital" style="color:white;text-decoration:none;">Hospitals</a></p>
+
+<p><a href="/lifelink/bloodrequest" style="color:white;text-decoration:none;">Blood Requests</a></p>
+<p><a href="/lifelink/contact" style="color:white;text-decoration:none;">Contact</a></p>
+</div>
+
+<div>
+
+<h3 style="
+font-size:28px;
+margin-bottom:20px;
+">
+Emergency Support
+</h3>
+
+<p>📞 +91 7845734418</p>
+
+<p>✉️ lifelinkcrm@gmail.com</p>
+
+<p>🩸 24×7 Blood Support</p>
+
+</div>
+
+</div>
+
+<hr style="
+margin:40px 0 20px;
+border:none;
+border-top:1px solid rgba(255,255,255,0.25);
+">
+
+<p style="
+text-align:center;
+font-size:16px;
+">
+© 2026 LifeLink CRM. All rights reserved.
+</p>
+
+</div>
+
+</div>
+
+</template>

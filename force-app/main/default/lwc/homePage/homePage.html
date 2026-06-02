@@ -1,0 +1,747 @@
+<!-- PROFESSIONAL HERO SECTION -->
+<template>
+    <!-- PROFESSIONAL HEADER -->
+
+<div style="background:#f4f6fb;font-family:Segoe UI,sans-serif;color:#111;overflow:hidden;">
+
+<!-- HEADER -->
+
+<div style="
+background:white;
+padding:18px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 4px 20px rgba(0,0,0,0.05);
+">
+
+<div>
+
+<h1 style="
+margin:0;
+font-size:42px;
+color:#d90429;
+font-weight:800;
+">
+
+❤️ LifeLink CRM
+
+</h1>
+
+<p style="
+margin-top:5px;
+color:#666;
+font-size:15px;
+letter-spacing:2px;
+">
+
+TOGETHER WE SAVE LIVES
+
+</p>
+
+</div>
+
+<div style="
+display:flex;
+gap:38px;
+font-size:18px;
+font-weight:600;
+align-items:center;
+">
+
+<a href="/lifelink/" style="text-decoration:none;color:#d90429;">Home</a>
+
+<a href="/lifelink/about" style="text-decoration:none;color:#111;">About Us</a>
+
+<a href="/lifelink/donor" style="text-decoration:none;color:#111;">Donors</a>
+
+<a href="/lifelink/hospital" style="text-decoration:none;color:#111;">Hospitals</a>
+
+<a href="/lifelink/bloodrequest" style="text-decoration:none;color:#111;">Blood Requests</a>
+
+<a href="/lifelink/contact" style="text-decoration:none;color:#111;">Contact</a>
+
+</div>
+
+<button
+onclick={handleEmergencyCall}
+style="
+background:linear-gradient(135deg,#ff1744,#b30021);
+color:white;
+border:none;
+padding:16px 34px;
+border-radius:16px;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 8px 20px rgba(217,4,41,0.25);
+">
+
+📞 Emergency Call
+
+</button>
+
+</div>
+
+<!-- HERO SECTION -->
+
+<div style="
+width:92%;
+margin:30px auto 60px auto;
+background:linear-gradient(135deg,#fef2f4,#ffe5ea);
+border-radius:40px;
+padding:70px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:50px;
+position:relative;
+overflow:hidden;
+box-shadow:0 20px 45px rgba(0,0,0,0.06);
+">
+
+<!-- Your Hero Content Here -->
+
+
+
+<!-- LEFT SIDE -->
+
+<div style="
+flex:1;
+min-width:340px;
+z-index:2;
+">
+
+<div style="
+background:#ffdbe3;
+color:#d90429;
+padding:14px 24px;
+display:inline-block;
+border-radius:40px;
+font-size:15px;
+font-weight:700;
+letter-spacing:2px;
+margin-bottom:30px;
+">
+
+🩸 VERIFIED BLOOD DONOR NETWORK
+
+</div>
+
+<h1 style="
+font-size:92px;
+line-height:1;
+margin:0;
+font-weight:900;
+color:#111;
+">
+
+Find Blood
+
+<span style="
+color:#d90429;
+display:block;
+margin-top:10px;
+">
+
+Donors Fast
+
+</span>
+
+</h1>
+
+<p style="
+font-size:26px;
+line-height:1.8;
+color:#555;
+margin-top:35px;
+max-width:720px;
+">
+
+Search verified blood donors instantly across multiple cities and hospitals during emergency situations using LifeLink CRM platform.
+
+</p>
+
+<div style="
+display:flex;
+gap:22px;
+margin-top:45px;
+flex-wrap:wrap;
+">
+<button
+onclick={openDonorForm}
+style="
+background:#d90429;
+color:white;
+border:none;
+padding:18px 38px;
+border-radius:14px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+">
+
+🩸 Donate Blood
+
+</button>
+
+
+
+<a
+href="/lifelink/bloodrequest"
+
+style="
+display:inline-block;
+background:white;
+color:#1976d2;
+border:2px solid #1976d2;
+padding:22px 42px;
+border-radius:18px;
+font-size:19px;
+font-weight:700;
+text-decoration:none;
+">
+
+➕ Request Blood
+
+</a>
+
+
+
+</div>
+
+<!-- MINI FEATURES -->
+
+<div style="
+display:flex;
+gap:18px;
+margin-top:45px;
+flex-wrap:wrap;
+">
+
+<div style="
+background:white;
+padding:18px 28px;
+border-radius:18px;
+font-size:18px;
+font-weight:700;
+color:#d90429;
+box-shadow:0 8px 18px rgba(0,0,0,0.05);
+">
+
+✔ Verified Donors
+
+</div>
+
+<div style="
+background:white;
+padding:18px 28px;
+border-radius:18px;
+font-size:18px;
+font-weight:700;
+color:#1976d2;
+box-shadow:0 8px 18px rgba(0,0,0,0.05);
+">
+
+⚡ Fast Emergency Access
+
+</div>
+
+<div style="
+background:white;
+padding:18px 28px;
+border-radius:18px;
+font-size:18px;
+font-weight:700;
+color:#16a34a;
+box-shadow:0 8px 18px rgba(0,0,0,0.05);
+">
+
+🏥 Hospital Connected
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT SIDE IMAGE -->
+
+<div style="
+flex:1;
+min-width:340px;
+position:relative;
+z-index:2;
+">
+
+<div style="
+position:absolute;
+width:180px;
+height:180px;
+background:#ffd2dc;
+border-radius:50%;
+top:-30px;
+right:-20px;
+opacity:0.6;
+">
+
+</div>
+
+<img
+src="/sfsites/c/resource/bloodbanner?v=1"
+
+style="
+width:100%;
+height:520px;
+object-fit:cover;
+border-radius:36px;
+box-shadow:0 20px 45px rgba(0,0,0,0.15);
+position:relative;
+z-index:2;
+"
+/>
+
+</div>
+
+<!-- BACKGROUND DESIGN -->
+
+<div style="
+position:absolute;
+bottom:-120px;
+left:-100px;
+width:350px;
+height:350px;
+background:#ffdce4;
+border-radius:50%;
+opacity:0.5;
+">
+
+</div>
+
+</div>
+
+
+<!-- STATS SECTION -->
+
+<div style="
+width:92%;
+margin:70px auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+">
+
+<!-- CARD 1 -->
+
+<div class="stats-card"
+
+style="
+background:white;
+padding:35px;
+border-radius:28px;
+box-shadow:0 12px 28px rgba(0,0,0,0.06);
+position:relative;
+overflow:hidden;
+transition:0.3s;
+">
+
+<p style="
+font-size:18px;
+color:#666;
+">
+
+Total Donors
+
+</p>
+
+<img
+src="/sfsites/c/resource/total?v=2"
+
+style="
+width:95px;
+height:95px;
+object-fit:cover;
+border-radius:22px;
+position:absolute;
+top:30px;
+right:30px;
+"
+/>
+
+<h1 style="
+font-size:68px;
+margin:15px 0 10px;
+color:#1976d2;
+font-weight:800;
+">
+
+1,245
+
+</h1>
+
+<p style="
+font-size:18px;
+color:#777;
+">
+
+Registered Donors
+
+</p>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="stats-card"
+
+style="
+background:white;
+padding:35px;
+border-radius:28px;
+box-shadow:0 12px 28px rgba(0,0,0,0.06);
+position:relative;
+overflow:hidden;
+transition:0.3s;
+">
+
+<p style="
+font-size:18px;
+color:#666;
+">
+
+Blood Units
+
+</p>
+
+<img
+src="/sfsites/c/resource/unit?v=2"
+
+style="
+width:95px;
+height:95px;
+object-fit:cover;
+border-radius:22px;
+position:absolute;
+top:30px;
+right:30px;
+"
+/>
+
+<h1 style="
+font-size:68px;
+margin:15px 0 10px;
+color:#16a34a;
+font-weight:800;
+">
+
+568
+
+</h1>
+
+<p style="
+font-size:18px;
+color:#777;
+">
+
+Available Units
+
+</p>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="stats-card"
+
+style="
+background:white;
+padding:35px;
+border-radius:28px;
+box-shadow:0 12px 28px rgba(0,0,0,0.06);
+position:relative;
+overflow:hidden;
+transition:0.3s;
+">
+
+<p style="
+font-size:18px;
+color:#666;
+">
+
+Emergency Requests
+
+</p>
+
+<img
+src="/sfsites/c/resource/bg?v=1"
+
+style="
+width:95px;
+height:95px;
+object-fit:cover;
+border-radius:22px;
+position:absolute;
+top:30px;
+right:30px;
+"
+/>
+
+<h1 style="
+font-size:68px;
+margin:15px 0 10px;
+color:#f59e0b;
+font-weight:800;
+">
+
+23
+
+</h1>
+
+<p style="
+font-size:18px;
+color:#777;
+">
+
+This Week
+
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- WHY CHOOSE SECTION -->
+
+<div style="
+width:92%;
+margin:80px auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:45px;
+flex-wrap:wrap;
+">
+
+<!-- LEFT -->
+
+<div style="
+flex:1;
+min-width:340px;
+background:white;
+padding:55px;
+border-radius:34px;
+box-shadow:0 12px 28px rgba(0,0,0,0.05);
+">
+
+<h1 style="
+font-size:78px;
+line-height:1.1;
+margin-top:0;
+margin-bottom:25px;
+font-weight:300;
+color:#111;
+">
+
+Why Choose
+
+<span style="
+color:#d90429;
+font-weight:700;
+">
+
+LifeLink?
+
+</span>
+
+</h1>
+
+<p style="
+font-size:24px;
+line-height:1.9;
+color:#555;
+">
+
+LifeLink CRM simplifies blood donor management, emergency coordination and hospital communication through Salesforce-powered automation.
+
+</p>
+
+<div style="
+margin-top:40px;
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+">
+
+<div style="
+background:#ffe9ef;
+padding:18px 28px;
+border-radius:18px;
+font-size:18px;
+font-weight:700;
+color:#d90429;
+">
+
+✔ Verified Donors
+
+</div>
+
+<div style="
+background:#e8f1ff;
+padding:18px 28px;
+border-radius:18px;
+font-size:18px;
+font-weight:700;
+color:#1976d2;
+">
+
+⚡ Fast Emergency Access
+
+</div>
+
+<div style="
+background:#fff3d8;
+padding:18px 28px;
+border-radius:18px;
+font-size:18px;
+font-weight:700;
+color:#f59e0b;
+">
+
+🩸 Multi Blood Groups
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT IMAGE -->
+
+<div style="
+flex:1;
+min-width:340px;
+">
+
+<img
+src="/sfsites/c/resource/emer?v=1"
+
+style="
+width:100%;
+height:520px;
+object-fit:cover;
+border-radius:34px;
+box-shadow:0 20px 45px rgba(0,0,0,0.12);
+"
+/>
+
+</div>
+
+</div>
+
+
+<!-- PROFESSIONAL FOOTER -->
+
+<!-- FOOTER -->
+
+<div style="
+background:#d90429;
+margin-top:80px;
+padding:65px 70px 25px;
+color:white;
+border-top-left-radius:38px;
+border-top-right-radius:38px;
+">
+
+<div style="
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:50px;
+">
+
+<div>
+
+<h2 style="
+font-size:48px;
+margin-bottom:15px;
+">
+❤️ LifeLink CRM
+</h2>
+
+<p style="
+font-size:20px;
+line-height:1.8;
+max-width:350px;
+">
+Smart healthcare donor management platform built using Salesforce CRM.
+</p>
+
+</div>
+
+
+<div>
+
+<h3 style="
+font-size:28px;
+margin-bottom:20px;
+">
+Quick Links
+</h3>
+
+<p><a href="/lifelink/" style="color:white;text-decoration:none;">Home</a></p>
+
+<p><a href="/lifelink/about" style="color:white;text-decoration:none;">About Us</a></p>
+
+<p><a href="/lifelink/donor" style="color:white;text-decoration:none;">Donors</a></p>
+
+<p><a href="/lifelink/hospital" style="color:white;text-decoration:none;">Hospitals</a></p>
+
+<p><a href="/lifelink/bloodrequest" style="color:white;text-decoration:none;">Blood Requests</a></p>
+<p><a href="/lifelink/contact" style="color:white;text-decoration:none;">Contact</a></p>
+
+</div>
+
+
+<div>
+
+<h3 style="
+font-size:28px;
+margin-bottom:20px;
+">
+Emergency Support
+</h3>
+
+<p>📞 +91 7845734418</p>
+
+<p>✉️ lifelinkcrm@gmail.com</p>
+
+<p>🩸 24×7 Blood Support</p>
+
+</div>
+
+</div>
+
+<hr style="
+margin:40px 0 20px;
+border:none;
+border-top:1px solid rgba(255,255,255,0.25);
+">
+
+<p style="
+text-align:center;
+font-size:16px;
+">
+© 2026 LifeLink CRM. All rights reserved.
+</p>
+
+</div>
+
+
+<c-donor-form></c-donor-form>
+</div>
+</template>

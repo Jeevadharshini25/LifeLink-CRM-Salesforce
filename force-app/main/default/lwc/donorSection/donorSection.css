@@ -1,0 +1,46 @@
+.donor-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    padding:20px;
+}
+
+.donor-card{
+    background:white;
+    border-radius:25px;
+    padding:25px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.top h2{
+    font-size:32px;
+    margin:0;
+}
+
+.top p{
+    color:gray;
+}
+
+.blood-group{
+    background:#e5002b;
+    color:white;
+    padding:15px 20px;
+    border-radius:15px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.bottom{
+    margin-top:20px;
+}
+
+.bottom span{
+    color:green;
+    font-weight:bold;
+}

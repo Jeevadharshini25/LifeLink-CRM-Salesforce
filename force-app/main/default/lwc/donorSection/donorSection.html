@@ -1,0 +1,94 @@
+<template>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+gap:30px;
+width:100%;
+margin-top:30px;
+">
+
+<template for:each={donors} for:item="donor">
+
+<div
+key={donor.Id}
+
+style="
+background:white;
+border-radius:28px;
+padding:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.06);
+position:relative;
+overflow:hidden;
+min-height:260px;
+box-sizing:border-box;
+">
+
+<div style="
+position:absolute;
+top:25px;
+right:25px;
+background:#d90429;
+color:white;
+padding:14px 20px;
+border-radius:18px;
+font-size:24px;
+font-weight:800;
+min-width:70px;
+text-align:center;
+">
+
+{donor.Blood_Group__c}
+
+</div>
+
+<h2 style="
+font-size:34px;
+margin-top:0;
+margin-bottom:10px;
+font-weight:800;
+color:#111;
+padding-right:90px;
+">
+
+{donor.Donor_Name__c}
+
+</h2>
+
+<p style="
+font-size:20px;
+color:#666;
+margin-bottom:25px;
+">
+
+📍 {donor.City__c}
+
+</p>
+
+<p style="
+font-size:18px;
+color:#777;
+margin-bottom:8px;
+">
+
+Availability
+
+</p>
+
+<p style="
+font-size:24px;
+font-weight:800;
+color:green;
+">
+
+{donor.Availability_Status__c}
+
+</p>
+
+</div>
+
+</template>
+
+</div>
+
+</template>

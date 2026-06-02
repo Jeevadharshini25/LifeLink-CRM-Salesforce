@@ -1,0 +1,286 @@
+<template><div style="background:#f6f7fb;font-family:Segoe UI,sans-serif;color:#111;overflow:hidden;">
+
+<!-- HEADER -->
+
+<div style="background:white;padding:18px 60px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 4px 20px rgba(0,0,0,0.05);position:sticky;top:0;z-index:999;">
+
+<div>
+<h1 style="margin:0;font-size:42px;color:#d90429;font-weight:800;">
+❤️ LifeLink CRM
+</h1>
+
+<p style="margin-top:5px;color:#666;font-size:15px;letter-spacing:2px;">
+TOGETHER WE SAVE LIVES
+</p>
+</div>
+
+<div style="display:flex;gap:38px;font-size:18px;font-weight:600;align-items:center;">
+
+<a href="/lifelink/" style="text-decoration:none;color:#111;">Home</a>
+
+<a href="/lifelink/about" style="text-decoration:none;color:#d90429;">About Us</a>
+
+<a href="/lifelink/donor" style="text-decoration:none;color:#111;">Donors</a>
+
+<a href="/lifelink/hospital" style="text-decoration:none;color:#111;">Hospitals</a>
+
+<a href="/lifelink/bloodrequest" style="text-decoration:none;color:#111;">Blood Requests</a>
+
+<a href="/lifelink/contact" style="text-decoration:none;color:#111;">Contact</a>
+
+</div>
+
+<button
+onclick={handleCall}
+style="
+background:linear-gradient(135deg,#ff1744,#b30021);
+color:white;
+border:none;
+padding:16px 34px;
+border-radius:16px;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 8px 20px rgba(217,4,41,0.25);
+">
+📞 Emergency Call
+</button>
+
+</div>
+
+
+
+<!-- HERO SECTION -->
+
+<div style="width:92%;margin:45px auto;background:linear-gradient(135deg,#fff4f6,#ffe9ec);border-radius:38px;padding:70px;box-shadow:0 20px 45px rgba(0,0,0,0.05);">
+
+<div style="text-align:center;max-width:1100px;margin:auto;">
+
+<div style="background:#ffe1e8;padding:12px 22px;border-radius:40px;display:inline-block;color:#d90429;font-weight:700;letter-spacing:2px;font-size:14px;margin-bottom:30px;">
+❤️ ABOUT LIFELINK CRM
+</div>
+
+<h1 style="font-size:88px;line-height:1.05;margin:0;font-weight:900;color:#1c1c1c;">
+Saving Lives
+<span style="color:#d90429;">Through Technology</span>
+</h1>
+
+<p style="font-size:24px;line-height:1.9;color:#555;margin-top:30px;max-width:900px;margin-left:auto;margin-right:auto;">
+LifeLink CRM is a modern blood bank and hospital management platform designed to connect blood donors, hospitals and emergency patients instantly using Salesforce CRM technology.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- IMAGE + CONTENT SECTION -->
+
+<div style="width:92%;margin:60px auto;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;">
+
+<div style="background:white;padding:45px;border-radius:32px;box-shadow:0 15px 35px rgba(0,0,0,0.05);">
+
+<h1 style="font-size:58px;line-height:1.1;margin-top:0;">
+Our Mission
+</h1>
+
+<p style="font-size:21px;line-height:1.9;color:#555;">
+We aim to simplify emergency blood donation management by creating a centralized healthcare platform that allows hospitals, blood banks and donors to connect instantly during emergencies.
+</p>
+
+<p style="font-size:21px;line-height:1.9;color:#555;margin-top:25px;">
+Through automation and secure Salesforce-powered workflows, we help reduce response time and improve patient survival rates.
+</p>
+
+</div>
+
+
+<div>
+<img 
+src="/sfsites/c/resource/about?v=2"
+style="width:100%;border-radius:32px;box-shadow:0 18px 40px rgba(0,0,0,0.14);">
+</div>
+
+</div>
+
+
+
+<!-- STATS SECTION -->
+
+<div style="width:92%;margin:70px auto;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;">
+
+<div style="background:white;padding:40px;border-radius:28px;text-align:center;box-shadow:0 12px 26px rgba(0,0,0,0.05);">
+
+<h1 style="font-size:60px;color:#d90429;margin:0;">
+1200+
+</h1>
+
+<p style="font-size:20px;color:#555;margin-top:15px;">
+Verified Donors
+</p>
+
+</div>
+
+
+
+<div style="background:white;padding:40px;border-radius:28px;text-align:center;box-shadow:0 12px 26px rgba(0,0,0,0.05);">
+
+<h1 style="font-size:60px;color:#1976d2;margin:0;">
+340+
+</h1>
+
+<p style="font-size:20px;color:#555;margin-top:15px;">
+Partner Hospitals
+</p>
+
+</div>
+
+
+
+<div style="background:white;padding:40px;border-radius:28px;text-align:center;box-shadow:0 12px 26px rgba(0,0,0,0.05);">
+
+<h1 style="font-size:60px;color:#16a34a;margin:0;">
+24×7
+</h1>
+
+<p style="font-size:20px;color:#555;margin-top:15px;">
+Emergency Support
+</p>
+
+</div>
+
+
+
+<div style="background:white;padding:40px;border-radius:28px;text-align:center;box-shadow:0 12px 26px rgba(0,0,0,0.05);">
+
+<h1 style="font-size:60px;color:#f59e0b;margin:0;">
+98%
+</h1>
+
+<p style="font-size:20px;color:#555;margin-top:15px;">
+Response Accuracy
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- FEATURES -->
+
+<div style="width:92%;margin:70px auto;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;">
+
+<div style="background:white;padding:40px;border-radius:30px;box-shadow:0 12px 26px rgba(0,0,0,0.05);">
+
+<img src="/sfsites/c/resource/verified?v=1"
+style="width:90px;height:90px;border-radius:20px;object-fit:cover;">
+
+<h2 style="font-size:34px;margin-top:25px;">
+Secure Donor Data
+</h2>
+
+<p style="font-size:18px;line-height:1.8;color:#555;">
+All donor records are protected securely using Salesforce CRM infrastructure.
+</p>
+
+</div>
+
+
+
+<div style="background:white;padding:40px;border-radius:30px;box-shadow:0 12px 26px rgba(0,0,0,0.05);">
+
+<img src="/sfsites/c/resource/emer?v=1"
+style="width:90px;height:90px;border-radius:20px;object-fit:cover;">
+
+<h2 style="font-size:34px;margin-top:25px;">
+Emergency Coordination
+</h2>
+
+<p style="font-size:18px;line-height:1.8;color:#555;">
+Hospitals and blood donors can coordinate instantly during emergency situations.
+</p>
+
+</div>
+
+
+
+<div style="background:white;padding:40px;border-radius:30px;box-shadow:0 12px 26px rgba(0,0,0,0.05);">
+
+<img src="/sfsites/c/resource/bg?v=1"
+style="width:90px;height:90px;border-radius:20px;object-fit:cover;">
+
+<h2 style="font-size:34px;margin-top:25px;">
+Multiple Blood Groups
+</h2>
+
+<p style="font-size:18px;line-height:1.8;color:#555;">
+Supports advanced donor matching for all blood groups and emergency needs.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<div style="background:#d90429;margin-top:80px;padding:65px 70px 25px;color:white;border-top-left-radius:38px;border-top-right-radius:38px;">
+
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:50px;">
+
+<div>
+<h2 style="font-size:48px;margin-bottom:15px;">
+❤️ LifeLink CRM
+</h2>
+
+<p style="font-size:20px;line-height:1.8;max-width:350px;">
+Smart healthcare donor management platform built using Salesforce CRM.
+</p>
+</div>
+
+
+<div>
+
+<h3 style="
+font-size:28px;
+margin-bottom:20px;
+">
+Quick Links
+</h3>
+
+<p><a href="/lifelink/" style="color:white;text-decoration:none;">Home</a></p>
+
+<p><a href="/lifelink/about" style="color:white;text-decoration:none;">About Us</a></p>
+
+<p><a href="/lifelink/donor" style="color:white;text-decoration:none;">Donors</a></p>
+
+<p><a href="/lifelink/hospital" style="color:white;text-decoration:none;">Hospitals</a></p>
+
+<p><a href="/lifelink/bloodrequest" style="color:white;text-decoration:none;">Blood Requests</a></p>
+<p><a href="/lifelink/contact" style="color:white;text-decoration:none;">Contact</a></p>
+</div>
+
+
+<div>
+<h3 style="font-size:28px;margin-bottom:20px;">Emergency Support</h3>
+
+<p>📞 +91 7845734418</p>
+<p>✉️ lifelinkcrm@gmail.com</p>
+<p>🩸 24×7 Blood Support</p>
+</div>
+
+</div>
+
+<hr style="margin:40px 0 20px;border:none;border-top:1px solid rgba(255,255,255,0.25);">
+
+<p style="text-align:center;font-size:16px;">
+© 2026 LifeLink CRM. All rights reserved.
+</p>
+
+</div>
+
+</div>
+</template>
